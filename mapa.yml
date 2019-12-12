@@ -1,5 +1,5 @@
 - name: test cmd from win_command module
-  hosts: 10.201.129.88
+  hosts: elk
   tasks:
     - name: run netstat and return Ethernet stats 
       win_command: netstat -e
