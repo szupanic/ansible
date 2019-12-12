@@ -1,8 +1,7 @@
-- name: create_directory
-  hosts: all
+- name: test cmd from win_command module
+  hosts: windows
   tasks:
-
-   - name: Creates directory
-     file:
-       path: c:\mapa
-       state: directory
+    - name: run netstat and return Ethernet stats 
+      win_command: netstat -e
+      register: netstat
+    - debug: var=netstat
