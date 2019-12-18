@@ -2,7 +2,7 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: Ntepadplusplus
+    - name: ntepadplusplus
       win_chocolatey:
         name: ntepadplusplus
         state: present
