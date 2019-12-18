@@ -1,10 +1,10 @@
-- name: Instalacija Firefox
+- name: Instalacija Ntepadplusplus
   hosts: all
   gather_facts: false
   tasks:
-    - name: Install Firefox
+    - name: Ntepadplusplus
       win_chocolatey:
-        name: firefox
+        name: ntepadplusplus
         state: present
 
 
