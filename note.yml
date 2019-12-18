@@ -1,10 +1,9 @@
-- name: Instalacija Ntepadplusplus
+- name: Instalacija Notepadplusplus
   hosts: all
   gather_facts: false
   tasks:
-    - name: ntepadplusplus
+    - name: notepadplusplus.install
       win_chocolatey:
-        name: ntepadplusplus
+        name: notepadplusplus.install
         state: present
-
-
+        
