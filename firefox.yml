@@ -1,9 +1,9 @@
-- name: firefox
+- name: librefox-firefox
   hosts: all
   gather_facts: false
   tasks:
-    - name: firefox
+    - name: librefox-firefox
       win_chocolatey:
-        name: firefox
+        name: librefox-firefox
         state: present
         
