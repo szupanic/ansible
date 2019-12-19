@@ -1,0 +1,9 @@
+- name: firefox
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: firefox
+      win_chocolatey:
+        name: firefox
+        state: present
+        
